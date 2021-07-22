@@ -6,7 +6,7 @@ require "faker"
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-(10).sample.times do
+10.times do
   article = Article.new(
     title: Faker::Commerce.product_name,
     content: Faker::Lorem.paragraph_by_chars
@@ -14,3 +14,4 @@ require "faker"
   article.save
   puts article
 end
+
